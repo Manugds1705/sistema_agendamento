@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procedimentos</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <img id="img-logo" src="../assets/logo_Login.png" alt="">
+        <nav>
+            <ul>
+                <li>
+                    <a href="./index.html">Início</a>
+                </li>
+                <li>
+                    <a href="./precedimentos.html">Procedimentos</a>
+                </li>
+                <li>
+                    <a href="./procedimentos.html">Sobre</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div id="contato">
+        <ul id="contato_ul">
+
+        </ul>
+    </div>
+
+    <script>
+        var contatos = document.getElementById("contato_ul")
+        var vetor = ["instagram", "whatsapp", "local"]
+
+        for (let i = 0; i < vetor.length; i++) {
+            var li = document.createElement('li');
+            li.textContent = vetor[i];
+            contatos.appendChild(li);
+        }
+    </script>
+</body>
+
+</html>
